@@ -1,0 +1,11 @@
+language: node_js
+node_js: '0.10'
+before_script:
+  - npm install
+script:
+  - gulp
+  - gulp test
+deploy:
+  provider: npm
+  email: "bryant.lincoln@gmail.com"
+  api_key: 8c9cd2b7-1c44-4700-a6fb-4e99398c9c4c
